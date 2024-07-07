@@ -42,7 +42,6 @@ const Add_order = async (req, res) => {
       return res.send({ code: 200, Msg: "Order Successfully" });
     }
   } catch (error) {
-    console.log(error);
     return res.send({ code: 400, Msg: "Error Geting on Adding Order", error });
   }
 };
@@ -91,7 +90,6 @@ const find_order_count = async (req, res) => {
 const get_orderdetails = async (req, res) => {
   try {
     const { OrderCatgory } = req.body;
-    console.log(OrderCatgory);
     if (!OrderCatgory)
       return res
         .status(400)
@@ -156,7 +154,6 @@ const user_order_details = async (req, res) => {
       return res.status(400).send({ code: 400, Msg: "Mailaddress is required" });
     }
     const FindData=await OrderModule.find({email:Mailaddress})
-    console.log(FindData)
     return res.status(200).send({code:200,data:FindData})
   } catch (error) {
     return res

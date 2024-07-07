@@ -116,7 +116,6 @@ const UpdateInsertProduct = async (req, res) => {
       }
     }
   } catch (error) {
-    console.log(error);
     return res.send({ code: 400, Msg: "Error Geting on Add Products", error });
   }
 };
@@ -145,7 +144,6 @@ const single_product = async (req, res) => {
 
 const filterCatwise_product = async (req, res) => {
   const { CategoryIds, serchValue } = req.body;
-  console.log(serchValue);
   try {
     if (!CategoryIds) {
       return res
@@ -185,7 +183,6 @@ const filterCatwise_product = async (req, res) => {
 const similer_product = async (req, res) => {
   const { BandName, ProductId } = req.body;
   try {
-    console.log(BandName);
     if (!BandName) {
       return res.status(400).send({ code: 400, Msg: "BandName is Required" });
     }
