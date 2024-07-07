@@ -1,2 +1,2 @@
 const mongoose=require('mongoose')
-mongoose.connect('mongodb://localhost:27017/ecomVonereact')
+mongoose.connect(process.env.MONGODBCONNECTION)
