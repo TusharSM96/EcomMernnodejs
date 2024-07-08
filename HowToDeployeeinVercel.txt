@@ -1,0 +1,6 @@
+1.first create vercel accout and login 
+2.in node js code create vercel.json file and add config 
+3.remove .env file
+4.in vercel create new project 
+5.select git repositry 
+6.give project name and add add envirment variable and add on deployee button
