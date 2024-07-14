@@ -2,15 +2,15 @@ const mongoose=require('mongoose')
 const Productschema=new mongoose.Schema({
     Prodname:{
         type:String,
-        require:true
+        required:true
     },
     ProPrice:{
         type:Number,
-        require:true
+        required:true
     },
     Discription:{
         type:String,
-        require:true
+        required:true
     },
     Active:{
         type:String,
@@ -18,19 +18,19 @@ const Productschema=new mongoose.Schema({
     },
     Category:{
         type:String,
-        require:true
+        required:true
     },
     Brand:{
         type:String,
-        require:true
+        required:true
     },
     ProductImage:{
         type:Object,
-        require:true
+        required:true
     },
     Quntity:{
         type:Number,
-        require:true
+        required:true
     }
 },{timestamps:true})
 

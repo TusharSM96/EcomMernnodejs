@@ -3,7 +3,6 @@ const prodrouter = express.Router();
 const multer = require("multer");
 const Storage = multer.memoryStorage();
 const Upload = multer({ storage: Storage });
-
 const {
   get_allCategory,
   delete_category,

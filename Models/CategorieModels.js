@@ -2,16 +2,16 @@ const mongoose=require('mongoose')
 const CategorySchema=new mongoose.Schema({
     Catogoryname:{
         type:String,
-        require:true,
+        required:true,
         unique:true
     },
     Discription:{
         type:String,
-        require:true,
+        required:true,
     },
     CategoryIcon:{
         type:String,
-        require:true
+        required:true
     },
     Active:{
         type:String,

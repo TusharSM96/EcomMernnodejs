@@ -3,31 +3,31 @@ const OrderMongoose = new mongoose.Schema(
   {
     email: {
       type: String,
-      require: true,
+      required: true,
     },
     userId: {
       type: String,
-      require: true,
+      required: true,
     },
     status: {
       type: String,
-      require: true,
+      required: true,
     },
     Address: {
       type: String,
-      require: true,
+      required: true,
     },
     orderDetails: {
       type: Object,
-      require: true,
+      required: true,
     },
     userDetails: {
       type: Object,
-      require: true,
+      required: true,
     },
     totalBill:{
         type:String,
-        require:true
+        required:true
     }
   },
   { timestamps: true }
